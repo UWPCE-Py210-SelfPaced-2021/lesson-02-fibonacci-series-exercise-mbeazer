@@ -5,11 +5,15 @@ def fibonacci(n):
 
 
 def lucas(n):
-    pass
+    if n == 1:
+        return 2
+    if n == 2:
+        return 1
+    return lucas(n - 1) + lucas(n - 2)
 
 
 def sum_series(n, n0=0, n1=1):
     pass
 
 
-print(fibonacci(1))
+print(lucas(5))
