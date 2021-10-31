@@ -23,8 +23,3 @@ def sum_series(n, n0=0, n1=1):
     if n == 1:
         return n1
     return sum_series(n - 1) + sum_series(n - 2)
-
-
-print(fibonacci(7))
-print(lucas(7))
-print(sum_series(7, n0=2, n1=1))
