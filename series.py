@@ -22,4 +22,4 @@ def sum_series(n, n0=0, n1=1):
         return n0
     if n == 1:
         return n1
-    return sum_series(n - 1) + sum_series(n - 2)
+    return sum_series(n - 1, n0, n1) + sum_series(n - 2, n0, n1)
